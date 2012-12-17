@@ -147,7 +147,7 @@ end
 
 # Enable connection proxy for associations
 # WARNING: Inject methods to association class right here (they proxy include calls somewhere else, so include does not work)
-association_proxy_class = DbCharmer.rails31? ? ActiveRecord::Associations::CollectionProxy : ActiveRecord::Associations::AssociationProxy
+association_proxy_class = ActiveRecord::Associations::CollectionProxy
 association_proxy_class.class_eval do
   def proxy?
     true
