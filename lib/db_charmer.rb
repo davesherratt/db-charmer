@@ -213,7 +213,7 @@ else
   ActiveRecord::Base.extend(DbCharmer::ActiveRecord::AssociationPreload)
 
   # Open up really useful API method
-  ActiveRecord::AssociationPreload::ClassMethods.send(:public, :preload_associations)
+ # ActiveRecord::AssociationPreload::ClassMethods.send(:public, :preload_associations)
 end
 
 
